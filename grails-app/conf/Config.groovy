@@ -86,7 +86,9 @@ log4j = {
 grails.plugins.springsecurity.userLookup.userDomainClassName = 'com.test.Person'
 grails.plugins.springsecurity.userLookup.authorityJoinClassName = 'com.test.PersonSecurityRole'
 grails.plugins.springsecurity.authority.className = 'com.test.SecurityRole'
-grails.plugins.springsecurity.secureChannel.definition = ['/login/**':'REQUIRES_SECURE_CHANNEL']
+grails.plugins.springsecurity.secureChannel.definition = ['/login/**':'REQUIRES_SECURE_CHANNEL',
+	'/logout/**':'REQUIRES_INSECURE_CHANNEL',
+	'/person/**':'REQUIRES_INSECURE_CHANNEL']
 grails.plugins.springsecurity.rememberMe.persistent = true
 grails.plugins.springsecurity.rememberMe.key = 'securitykeyfor_EJ'
 grails.plugins.springsecurity.rememberMe.persistentToken.domainClassName = 'com.test.PersistentLogin'

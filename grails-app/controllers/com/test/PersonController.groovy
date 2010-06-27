@@ -67,10 +67,8 @@ class PersonController {
                     return
                 }
             }
-			println "pi.password = $personInstance.password, params.password = $params.password, pi.username = $personInstance.username"
 			if (personInstance.password != params.password) {
 				params.password = springSecurityService.encodePassword(params.password, personInstance.username)
-				println "$params.password"
 			}
             personInstance.properties = params
             if (!personInstance.hasErrors() && personInstance.save(flush: true)) {
@@ -78,7 +76,6 @@ class PersonController {
 				if (springSecurityService.loggedIn && springSecurityService.principal.username == personInstance.username) {
 					springSecurityService.reauthenticate personInstance.username
 				}
-				println "$personInstance.password"
                 flash.message = "${message(code: 'default.updated.message', args: [message(code: 'person.label', default: 'Person'), personInstance.id])}"
                 redirect(action: "show", id: personInstance.id)
             }
