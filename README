@@ -1,7 +1,7 @@
-This grails project is skeleton app modeled after the example project defined in the Grails Spring Security User Guide: http://burtbeckwith.github.com/grails-spring-security-core/docs/manual/guide/single.html
+A skeleton Grails app modeled after the example project defined in the Grails Spring Security User Guide: http://burtbeckwith.github.com/grails-spring-security-core/docs/manual/guide/single.html
 
 A few changes/additions were made to the tutorial application:
- - Domain name changes:  The default classes of 'User' and 'Role' would possibly conflict with some database reseverd words.  They were changed to 'Person' and 'SecurityRole'
+ - Domain name changes:  The default classes of 'User' and 'Role' would possibly conflict with some database reserved words.  They were changed to 'Person' and 'SecurityRole'
  - Secure Channels: Forced logins to occur over HTTPS
  - Added Persistent Login (cookies) saved to the database
  - Added password encryption with salt
