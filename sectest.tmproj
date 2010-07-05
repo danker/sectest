@@ -2,6 +2,8 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>currentDocument</key>
+	<string>grails-app/controllers/com/test/PersonController.groovy</string>
 	<key>documents</key>
 	<array>
 		<dict>
@@ -18,7 +20,56 @@
 	<key>fileHierarchyDrawerWidth</key>
 	<integer>320</integer>
 	<key>metaData</key>
-	<dict/>
+	<dict>
+		<key>grails-app/conf/BootStrap.groovy</key>
+		<dict>
+			<key>caret</key>
+			<dict>
+				<key>column</key>
+				<integer>105</integer>
+				<key>line</key>
+				<integer>11</integer>
+			</dict>
+			<key>firstVisibleColumn</key>
+			<integer>0</integer>
+			<key>firstVisibleLine</key>
+			<integer>0</integer>
+		</dict>
+		<key>grails-app/conf/Config.groovy</key>
+		<dict>
+			<key>caret</key>
+			<dict>
+				<key>column</key>
+				<integer>1</integer>
+				<key>line</key>
+				<integer>90</integer>
+			</dict>
+			<key>firstVisibleColumn</key>
+			<integer>0</integer>
+			<key>firstVisibleLine</key>
+			<integer>37</integer>
+		</dict>
+		<key>grails-app/controllers/com/test/PersonController.groovy</key>
+		<dict>
+			<key>caret</key>
+			<dict>
+				<key>column</key>
+				<integer>13</integer>
+				<key>line</key>
+				<integer>68</integer>
+			</dict>
+			<key>firstVisibleColumn</key>
+			<integer>0</integer>
+			<key>firstVisibleLine</key>
+			<integer>40</integer>
+		</dict>
+	</dict>
+	<key>openDocuments</key>
+	<array>
+		<string>grails-app/conf/Config.groovy</string>
+		<string>grails-app/controllers/com/test/PersonController.groovy</string>
+		<string>grails-app/conf/BootStrap.groovy</string>
+	</array>
 	<key>showFileHierarchyDrawer</key>
 	<true/>
 	<key>windowFrame</key>
